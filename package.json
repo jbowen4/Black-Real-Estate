@@ -1,0 +1,21 @@
+{
+  "name": "blackre",
+  "version": "1.0.0",
+  "description": "Online black real estate community",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon app",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Joshua Bowen",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0"
+  }
+}
