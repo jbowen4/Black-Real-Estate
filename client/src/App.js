@@ -1,9 +1,15 @@
 import React from 'react';
+import CardList from "./components/CardList";
+import Filter from "./components/Filter";
+import { GlobalProvider } from "./GlobalContext";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello, world</h1>
+      <GlobalProvider>
+        <Filter />
+        <CardList />
+      </GlobalProvider>
     </div>
   );
 }

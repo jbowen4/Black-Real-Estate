@@ -10,4 +10,6 @@ app.use(express.json({ extended: true }));
 
 app.use(cors());
 
+app.use('/pros', require('./routes/pros'));
+
 app.listen(4000);
